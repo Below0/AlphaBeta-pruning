@@ -1,10 +1,14 @@
 ﻿  ConsoleApplication3.cpp
-C:\Users\HAYOUNG LEE\source\repos\ConsoleApplication3\ConsoleApplication3\ConsoleApplication3.cpp(51,35): warning C4305: '=': 'double'에서 'float'(으)로 잘립니다.
-C:\Users\HAYOUNG LEE\source\repos\ConsoleApplication3\ConsoleApplication3\ConsoleApplication3.cpp(52,21): warning C4305: '=': 'double'에서 'float'(으)로 잘립니다.
 C:\Users\HAYOUNG LEE\source\repos\ConsoleApplication3\ConsoleApplication3\ConsoleApplication3.cpp(55,35): warning C4305: '=': 'double'에서 'float'(으)로 잘립니다.
 C:\Users\HAYOUNG LEE\source\repos\ConsoleApplication3\ConsoleApplication3\ConsoleApplication3.cpp(56,21): warning C4305: '=': 'double'에서 'float'(으)로 잘립니다.
-C:\Users\HAYOUNG LEE\source\repos\ConsoleApplication3\ConsoleApplication3\ConsoleApplication3.cpp(65,34): warning C4305: '=': 'double'에서 'float'(으)로 잘립니다.
-C:\Users\HAYOUNG LEE\source\repos\ConsoleApplication3\ConsoleApplication3\ConsoleApplication3.cpp(66,22): warning C4305: '=': 'double'에서 'float'(으)로 잘립니다.
+C:\Users\HAYOUNG LEE\source\repos\ConsoleApplication3\ConsoleApplication3\ConsoleApplication3.cpp(59,35): warning C4305: '=': 'double'에서 'float'(으)로 잘립니다.
+C:\Users\HAYOUNG LEE\source\repos\ConsoleApplication3\ConsoleApplication3\ConsoleApplication3.cpp(60,21): warning C4305: '=': 'double'에서 'float'(으)로 잘립니다.
 C:\Users\HAYOUNG LEE\source\repos\ConsoleApplication3\ConsoleApplication3\ConsoleApplication3.cpp(69,34): warning C4305: '=': 'double'에서 'float'(으)로 잘립니다.
 C:\Users\HAYOUNG LEE\source\repos\ConsoleApplication3\ConsoleApplication3\ConsoleApplication3.cpp(70,22): warning C4305: '=': 'double'에서 'float'(으)로 잘립니다.
+C:\Users\HAYOUNG LEE\source\repos\ConsoleApplication3\ConsoleApplication3\ConsoleApplication3.cpp(73,34): warning C4305: '=': 'double'에서 'float'(으)로 잘립니다.
+C:\Users\HAYOUNG LEE\source\repos\ConsoleApplication3\ConsoleApplication3\ConsoleApplication3.cpp(74,22): warning C4305: '=': 'double'에서 'float'(으)로 잘립니다.
+C:\Users\HAYOUNG LEE\source\repos\ConsoleApplication3\ConsoleApplication3\ConsoleApplication3.cpp(88,21): warning C4018: '<': signed 또는 unsigned가 일치하지 않습니다.
+C:\Users\HAYOUNG LEE\source\repos\ConsoleApplication3\ConsoleApplication3\ConsoleApplication3.cpp(97,21): warning C4018: '<': signed 또는 unsigned가 일치하지 않습니다.
+C:\Users\HAYOUNG LEE\source\repos\ConsoleApplication3\ConsoleApplication3\ConsoleApplication3.cpp(83,8): warning C4101: 'temp' :참조되지 않은 지역 변수입니다.
+C:\Users\HAYOUNG LEE\source\repos\ConsoleApplication3\ConsoleApplication3\ConsoleApplication3.cpp(123,43): warning C4305: '인수': 'int'에서 'float'(으)로 잘립니다.
   ConsoleApplication3.vcxproj -> C:\Users\HAYOUNG LEE\source\repos\ConsoleApplication3\Debug\ConsoleApplication3.exe

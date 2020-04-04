@@ -2,8 +2,12 @@
 #include <cstdio>
 #include <malloc.h>
 #include <vector>
-#define STONE_SIZE sizeof(bool)*N
+#include <climits>
+#include <cmath>
+#include <algorithm>
 
+using namespace std;
+#define STONE_SIZE sizeof(bool)*N
 bool* stones;
 bool* check;
 int N, M;
@@ -73,7 +77,7 @@ float evaluate(bool player, int last) {
 	return result;
 }
 
-float minmax(int depth, bool player, int last, int alpha, int beta) {
+float minmax(int depth, bool player, int last, float a, float b) {
 	vector<int> v;
 	float temp;
 	for (int i = 0; i < N; i++) {
@@ -81,18 +85,24 @@ float minmax(int depth, bool player, int last, int alpha, int beta) {
 	}
 	if (player) {
 		for (int i = 0; i < v.size(); i++) {
-			temp = minmax(depth + 1, false, v[i], 0, 0);
+			stones[v[i] - 1] = false;
+			a = max(a, minmax(depth + 1, false, v[i], a, b));
+			stones[v[i] - 1] = true;
+			if (a >= b) break;
 		}
+		return b;
 	}
 	else {
 		for (int i = 0; i < v.size(); i++) {
-			temp = minmax(depth + 1, true, v[i], 0, 0);
+			stones[v[i] - 1] = false;
+			b = min(b,minmax(depth + 1, true, v[i], a, b));
+			stones[v[i] - 1] = true;
+			if (a >= b) break;
 		}
+		return a;
 	}
-	return 0;
 }
 
-using namespace std;
 
 int main(){
 	int t, last = 0;
@@ -107,10 +117,9 @@ int main(){
 		if (i == M - 1) last = t;
 		stones[t - 1] = false;
 	}
-	for (int i = 0; i < N; i++) {
-		cout << stones[i] << endl;
-	}
 	if (M % 2 == 0) start = true; // MAX
 	else start = false;
-	res = minmax(0,start,last,0,0);
+	res = minmax(0,start,last,INT_MIN,INT_MAX);
+	cout << res << endl;
+	return 0;
 }
